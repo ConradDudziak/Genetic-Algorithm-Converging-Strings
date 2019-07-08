@@ -1,6 +1,6 @@
 // Conrad Dudziak - UWB CSS 497
 // July 7th 2019
-// A genetic algorithm component that serves as a set of individuals (DNA) objects.
+// A genetic algorithm component that evolves populations.
 // A population can be evolved using the evolve method within the Driver class.
 // Uses the darwinian principles of heredity, variation, and selection to evolve
 // a set of random genes towards a target gene sequence.
