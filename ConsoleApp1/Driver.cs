@@ -1,3 +1,10 @@
+// Conrad Dudziak - UWB CSS 497
+// July 7th 2019
+// A genetic algorithm component that serves as a set of individuals (DNA) objects.
+// A population can be evolved using the evolve method within the Driver class.
+// Uses the darwinian principles of heredity, variation, and selection to evolve
+// a set of random genes towards a target gene sequence.
+
 namespace GeneticAlgs.ConvergingStrings {
 
 	using System;
@@ -7,6 +14,8 @@ namespace GeneticAlgs.ConvergingStrings {
 	using System.Threading.Tasks;
 
 	class Driver {
+
+		// The main method which constructs a population object and evolves it.
 		static void Main(string[] args) {
 			string target = "Hello world!";
 			int maxPopulation = 200;
@@ -20,6 +29,8 @@ namespace GeneticAlgs.ConvergingStrings {
 			Console.ReadKey();
 		}
 
+		// Loops until the population has resulted in an individual who matches the target.
+		// Evolves the population with every iteration and outputs the results to console.
 		static void evolve(Population population) {
 			while (!population.isFinished()) {
 				population.naturalSelection();
